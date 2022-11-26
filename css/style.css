@@ -33,7 +33,7 @@ a:hover {
     color: var(--gris);
     font-size: 2rem;
 }
-h2, h3, h4 {
+h2, h3, h4, h5 {
     font-family: var(--fuenteHeading);
     line-height: 2;
     letter-spacing: 2px;
@@ -65,36 +65,65 @@ li {
 .margin {
     margin: 1.2rem 2rem;                                
 }
+.margin-esp {
+    margin: 1.3rem auto;
+}
 .no-margin {
     margin: 0;
 }
 .no-padding {
     padding: 0;
 }
+.pad-b {
+    padding-bottom: 3rem;
+}
+
 .centrar-texto {
     text-align: center;
 }
 .border-radius {
     border-radius: 30%;
-    width: 180px;
-    height: auto; 
 }
 .border-radius1 {
     border-radius: 30%;
-    width: 120px;
+    width: 180px;
+    margin: 1.6rem 2rem 1.6rem 0;
     height: auto; 
 }
 .white {
     color: var(--grisOs);
 }
-
 .black {
     background-color: var(--negro);
 }
+
+.inline {
+    display: inline-block;
+}
+.equilibrium {
+    display: flex;
+    justify-content: center;
+}
+
+.img-yo {
+    width: 140px;
+    height: auto; 
+}
+
+@media (min-width: 480px) {
+    .img-yo {
+        width: 180px;
+        height: auto; 
+    }
+}
+.img-yocv {
+    width: 140px;
+    height: auto; 
+}
 @media (min-width: 768px) {
     .span {
-        display: inline-block; 
-        margin: 2rem 4rem;
+       white-space: pre;
+     
     }    
 }
 
@@ -102,30 +131,25 @@ li {
     display: grid;
     grid-template-columns: 20% 80% ;
 }
-@media (min-width: 600px) {
+@media (min-width: 692px) {
         .column2 {
         display: grid;
-         grid-template-columns: 42% 58% ;
+        grid-template-columns: 34% 68% ;
     }
 }
 @media (min-width: 992px) {
         .column2 {
         display: grid;
-         grid-template-columns: 31% 69% ;
+        grid-template-columns: 25% 75% ;
     }
-}
-.column3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.navegacion-secundaria {
-    padding: 1rem;
-    background-color: var(--negro);
-   
 }
 
 /** Header **/
+
+.navegacion-secundaria {
+    padding: 0;
+    background-color: var(--negro); 
+}
 .header {
     background-image: url(../img/remy_loz-3S0INpfREQc-unsplash.jpg);
 }
@@ -155,6 +179,12 @@ li {
         justify-content: space-between;
         align-items: center;
     }
+    .barra1 {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 .logo {
     color: var(--blanco);
@@ -163,28 +193,22 @@ li {
 .logo__nombre {
     font-weight: 300;
 }
-.logo__bold {
-    font-weight: 700;
-}
+
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
         gap: 2rem;
     }
+    .mar-l{
+        margin-right: 2rem;
+    }
+   
 }
 .navegacion__enlace {
     display: block;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
-}
-
-@media (min-width: 768px) {
-    .contenido-principal {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 4rem;
-    }
 }
 
 /* .boton {
@@ -219,24 +243,23 @@ li {
 
 .footer {
     background-color: var(--negro);
-    padding-bottom: 3rem;
     margin-top: 4rem;
 }
 .footer2 {
-    background-color: var(--negro);
-    padding-bottom: 3rem;
+    background-color: var(--negro); 
+    padding-top: 4rem;
+}
+@media (min-width: 768px) {
+    .footer2 {
+        padding-top: 1.6rem;
+    }
 }
 .aside-rows {
     display: grid;
-    grid-template-rows: 23% 47% 30%;
-    background-color: var(--primario);
+    grid-template-rows: 32% 50% 18%;
+    background-color: var(--primario);   
 }
-@media (min-width: 600px) {
-    .aside-rows{
-        width: 24rem;
-        height: 100rem;
-    }
-}
+  
 .card {
     gap: 2rem;
     display:block;
@@ -245,27 +268,20 @@ li {
 
 .rows {
     display: grid;
-    grid-template-rows: 15% 38% 47%;
+    grid-template-rows: 18% 50% 32%;
+}
+@media (min-width: 667px) {
+    .rows {
+        display: grid;
+        grid-template-rows: 18% 33% 49%;
+    }
+    
+}
+.seccion {
+    margin-right: 1rem;
 }
 
-.seccion-iconos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-@media (min-width: 768px) {
     .seccion-iconos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-}
-.inline {
-    display: inline-block;
-}
-.equilibrium {
-    display: flex;
-    justify-content: center;
-}
-.margin-esp {
-   
-    margin: 1.3rem auto;
-}

@@ -38,14 +38,14 @@ const person = {
 const imagen = document.createElement('img');
 function agregarImagen() {
     imagen.classList.add('border-radius1');
+    imagen.classList.add('img-yocv');
     imagen.src ='./img/cv.jpg';
     contenedor.appendChild(imagen);
 }
 
 function crearNodo(etiqueta, clase, clase1, contenido, lugar) {
     let caja = document.createElement(etiqueta);
-    caja.classList.add(clase);
-    caja.classList.add(clase1);
+    caja.classList.add(clase, clase1);
     caja.textContent = contenido ;
     lugar.appendChild(caja);
 }
@@ -60,17 +60,6 @@ agregarImagen();
 crearNodo("h1", "logo-nombre","centrar-texto", person.firstname + person.lastname, contenedor);
 
 
-
-
-
-
-
-
-
-
-
-
-
 //aside
 
 const contactIcon1 = document.createElement('div');
@@ -82,30 +71,21 @@ contactIcon1.classList.add('inline')
 
 const card1 = document.querySelector('#card1');
 crearNodo('h4', 'white', 'centrar-texto', 'Contact', card1);
-const lista = document.createElement('ul');
-const listado = card1.appendChild(lista);
+// const lista = document.createElement('ul');
+// const listado = card1.appendChild(lista);
 
 const iconHome = document.createElement('i');
-iconHome.classList.add('fa-solid');
-iconHome.classList.add('margin');
-iconHome.classList.add('inline');
-iconHome.classList.add('fa-location-dot');
+iconHome.classList.add('fa-location-dot', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon1, iconHome);
 crearNodo('li', 'white', 'inline', person.residence, contactIcon1);
 
 const iconPhone = document.createElement('i');
-iconPhone.classList.add('fa-solid');
-iconPhone.classList.add('margin');
-iconPhone.classList.add('inline');
-iconPhone.classList.add('fa-phone');
+iconPhone.classList.add('fa-phone', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon2, iconPhone);
 crearNodo('li', 'inline', 'white', person.cell, contactIcon2);
 
 const iconMail = document.createElement('i');
-iconMail.classList.add('fa-solid');
-iconMail.classList.add('margin');
-iconMail.classList.add('inline');
-iconMail.classList.add('fa-envelope');
+iconMail.classList.add('fa-envelope', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon3, iconMail);
 crearNodo('li', 'white', 'inline', person.email, contactIcon3);
 
@@ -150,54 +130,42 @@ const separador1 = document.createElement('div');
 separador1.classList.add('equilibrium');
 
 const icon1 = document.createElement('i');
-icon1.classList.add('fa-brands');
-icon1.classList.add('fa-2x');
-icon1.classList.add('fa-html5');
+icon1.classList.add('fa-html5', 'fa-2x', 'fa-brands');
 separador1.appendChild(icon1);
 
 const separador2 = document.createElement('div');
 separador2.classList.add('equilibrium');
 
 const icon2 = document.createElement('i');
-icon2.classList.add('fa-brands');
-icon2.classList.add('fa-2x');
-icon2.classList.add('fa-css3-alt');
+icon2.classList.add('fa-css3-alt', 'fa-2x', 'fa-brands');
 separador2.appendChild(icon2);
 
 const separador3 = document.createElement('div');
 separador3.classList.add('equilibrium');
 
 const icon3 = document.createElement('i');
-icon3.classList.add('fa-brands');
-icon3.classList.add('fa-2x');
-icon3.classList.add('fa-js');
+icon3.classList.add('fa-js', 'fa-2x', 'fa-brands');
 separador3.appendChild(icon3);
 
 const separador4 = document.createElement('div');
 separador4.classList.add('equilibrium');
 
 const icon4 = document.createElement('i');
-icon4.classList.add('fa-brands');
-icon4.classList.add('fa-2x');
-icon4.classList.add('fa-php');
+icon4.classList.add('fa-php', 'fa-2x', 'fa-brands');
 separador4.appendChild(icon4);
 
 const separador5 = document.createElement('div');
 separador5.classList.add('equilibrium');
 
 const icon5 = document.createElement('i');
-icon5.classList.add('fa-solid');
-icon5.classList.add('fa-2x');
-icon5.classList.add('fa-database');
+icon5.classList.add('fa-database', 'fa-2x', 'fa-solid');
 separador5.appendChild(icon5);
 
 const separador6 = document.createElement('div');
 separador6.classList.add('equilibrium');
 
 const icon6 = document.createElement('i');
-icon6.classList.add('fa-brands');
-icon6.classList.add('fa-3x');
-icon6.classList.add('fa-github');
+icon6.classList.add('fa-github', 'fa-2x', 'fa-brands');
 separador6.appendChild(icon6);
 
 
@@ -241,16 +209,11 @@ crearIconos(cardCont6, separador6);
 
 
 
-
-
-
-
-
-
-
 const seccion3 = document.querySelector('#seccion3');
-const listaDesprdenada = document.createElement('ul');
-crearNodo('h3', 'no-margin', 'centrar-texto', 'Jobs & Projects', seccion3);
-crearNodo('li', null, 'contenedor', 'Builiding web pages, based on Clients necessities, creating a nice interaction for user, and builiding a strong and safe acces to DataBase', listaDesprdenada);
-crearNodo('li', null, 'contenedor', 'Layout Development and Programming, with Responsive Design', listaDesprdenada);
-seccion3.appendChild(listaDesprdenada)
+const proyectos = document.createElement('div');
+crearNodo('h3', 'margin-esp', 'centrar-texto', 'Jobs & Projects', seccion3);
+crearNodo('p', null, 'contenedor', 'Builiding web pages, based on Clients necessities, creating a nice interaction for user, and builiding a strong and safe acces to DataBase.', proyectos);
+crearNodo('p', null, 'contenedor', 'Layout Development and Programming, with Responsive Design.', proyectos);
+crearNodo('p', null, 'contenedor', 'Knowledge of AJAX  and VUE.', proyectos);
+crearNodo('p', null, 'contenedor', 'Check my Projects here : https://github.com/Michellefsd.', proyectos);
+seccion3.appendChild(proyectos);
