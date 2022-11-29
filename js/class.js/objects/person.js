@@ -1,7 +1,7 @@
 export const person = {
     firstname: "Michelle ",
     lastname: " Rodríguez",
-    Email: "promichfsd@gmail.com",
+    email: "promichfsd@gmail.com",
     Phone: '098169050',
     residence: 'Montevideo, Uruguay',
     image: "img/cv.jpg",

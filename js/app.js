@@ -38,7 +38,7 @@ crearNodo('li', 'inline', 'white', person.Phone, contactIcon2);
 const iconMail = document.createElement('i');
 iconMail.classList.add('fa-envelope', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon3, iconMail);
-crearNodo('li', 'white', 'inline', person.Email, contactIcon3);
+crearNodo('li', 'white', 'inline', person.email, contactIcon3);
 
 card1.appendChild(contactIcon1);
 card1.appendChild(contactIcon2);

@@ -7,6 +7,7 @@
     --grisOs: #cccccc;
     --blanco: #ffffff;
     --negro: #000000;
+    --verde:rgb(110, 134, 4);
 }
 html {
     box-sizing: border-box;
@@ -70,6 +71,9 @@ blockquote {
 
 
 /** Utilidades **/
+.opacity {
+    opacity: 0.8;
+}
 .margin {
     margin: 1.2rem 2rem;                                
 }
@@ -78,6 +82,9 @@ blockquote {
 }
 .no-margin {
     margin: 0;
+}
+.margin-r {
+    margin-right: 15rem;
 }
 .no-padding {
     padding: 0;
@@ -93,6 +100,9 @@ blockquote {
 }
 .border-radius {
     border-radius: 30%;
+}
+.border-radius2 {
+    border-radius: .5rem;
 }
 .border-radius1 {
     border-radius: 30%;
@@ -266,7 +276,7 @@ blockquote {
     cursor: pointer;
 }
 .boton--primario {
-    background-color: var(--negro);
+    background-color: var(--verde);
 }
 .boton--secundario {
     background-color: var(--primario);
@@ -341,4 +351,11 @@ blockquote {
         border: 0px solid;
         height: 22px;
         width: 267px;
+}
+.alerta-exito {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 3rem;
 }

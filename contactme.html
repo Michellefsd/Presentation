@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="src/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    
 </head>
 <body>
 
@@ -37,25 +37,35 @@
                         <p class="contenedor pad-b">Elon Musk</p>
                     </div>
                 </section>
-                <form class="contenedor formulario">
+                <form class="contenedor formulario" action="https://formspree.io/f/mrgdvwwz" method="POST">
                     <h4>Contact</h4>
                     <div>
-                        <legend for="Name">Name :</legend>
-                        <input class="inputs" id="Name" type="text">
+                        <legend for="name">Name :</legend>
+                        <input class="inputs" id="name" name="name" type="text">
                     </div>
                     <div class="pad-t">
-                        <legend for="Email">Email :</legend>
-                        <input class="inputs" id="Email" type="email">
+                        <legend for="email">Email :</legend>
+                        <input class="inputs" id="email" name="email" type="email">
                     </div>
                     <div class="pad-t">
-                        <legend for="Phone">Phone :</legend>
-                        <input class="inputs"id="Phone" type="tel">
+                        <legend for="phone">Phone :</legend>
+                        <input class="inputs"id="phone" name="phone" type="tel">
                     </div>
                     <div class="pad-t pad-b"> 
-                        <legend for="Message">Message :</legend>
-                        <textarea cols="30" rows="7" id="Message"></textarea>
+                        <legend for="message">Message :</legend>
+                        <textarea cols="30" rows="7" name="message" id="message"></textarea>
                     </div>
-                    <input type="submit" class="boton boton--primario" name="send" id="send" value="Send">
+                    <div class="spinner-father">
+                    <input type="submit" class="boton margin-r opacity border-radius2 boton--primario" name="send" id="send" value="Send" disabled>
+                        <div id="spinner" class="hidden sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </main>
