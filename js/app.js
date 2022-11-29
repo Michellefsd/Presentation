@@ -1,62 +1,15 @@
-const contenedor = document.querySelector('#header');
 
-const person = {
-    firstname: "Michelle ",
-    lastname: " Rodríguez",
-    email: "promichfsd@gmail.com",
-    cell: '098169050',
-    residence: 'Montevideo, Uruguay',
-    image: "img/cv.jpg",
-    sociability: 'Kind with collegues',
-    personality: 'proactive and adaptable',
-    motivation: 'Passion for Learning',
-    education: [
-        {
-            institution: "Udemy",
-            course: "Web Development",
-            year: 2021,
-        },
-        {
-            institution: "Udemy",
-            course: "Javascript",
-            year: 2022,
-        },
-    ],
-    jobs: [
-        {
-            title: "Freelacer",
-            year_from: 2022,
-            year_to: 2022,
-        },
-    ],
-    languages: ['English', 'Spanish', 'Portuguese'],
-    
-};
-
-        //Funciones
-
-const imagen = document.createElement('img');
-function agregarImagen() {
-    imagen.classList.add('border-radius1');
-    imagen.classList.add('img-yocv');
-    imagen.src ='./img/cv.jpg';
-    contenedor.appendChild(imagen);
-}
-
-function crearNodo(etiqueta, clase, clase1, contenido, lugar) {
-    let caja = document.createElement(etiqueta);
-    caja.classList.add(clase, clase1);
-    caja.textContent = contenido ;
-    lugar.appendChild(caja);
-}
+import { person } from "./class.js/objects/person.js";
 
 
-function crearIconos(seccion, icono ) {
+//Funciones
 
-    seccion.appendChild(icono)
-}
+import { crearNodo } from './functions/crearNodo.js';
+import { crearIconos } from './functions/crearIconos.js';
+import { contenedor, agregarImagen } from './functions/crearImagen.js';
 
-agregarImagen();
+
+agregarImagen('./img/cv.jpg');
 crearNodo("h1", "logo-nombre","centrar-texto", person.firstname + person.lastname, contenedor);
 
 
@@ -71,8 +24,6 @@ contactIcon1.classList.add('inline')
 
 const card1 = document.querySelector('#card1');
 crearNodo('h4', 'white', 'centrar-texto', 'Contact', card1);
-// const lista = document.createElement('ul');
-// const listado = card1.appendChild(lista);
 
 const iconHome = document.createElement('i');
 iconHome.classList.add('fa-location-dot', 'inline', 'margin', 'fa-solid');
@@ -82,12 +33,12 @@ crearNodo('li', 'white', 'inline', person.residence, contactIcon1);
 const iconPhone = document.createElement('i');
 iconPhone.classList.add('fa-phone', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon2, iconPhone);
-crearNodo('li', 'inline', 'white', person.cell, contactIcon2);
+crearNodo('li', 'inline', 'white', person.Phone, contactIcon2);
 
 const iconMail = document.createElement('i');
 iconMail.classList.add('fa-envelope', 'inline', 'margin', 'fa-solid');
 crearIconos(contactIcon3, iconMail);
-crearNodo('li', 'white', 'inline', person.email, contactIcon3);
+crearNodo('li', 'white', 'inline', person.Email, contactIcon3);
 
 card1.appendChild(contactIcon1);
 card1.appendChild(contactIcon2);
@@ -107,14 +58,6 @@ crearNodo('li', 'white', 'margin', person.sociability, listado1);
 
 const card3 = document.querySelector('#card3');
 crearNodo('p', 'margin', 'white', 'This Currículum was made by Michelle Rodríguez, with HTML, CSS, and lots of Javascript', card3);
-
-
-
-
-
-
-
-
 
 
 //main

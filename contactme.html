@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="src/fontawesome/css/fontawesome.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion-secundaria">
+            <div class="contenedor column1">   </div>
+
+            <div class="contenedor">
+                <div class="pad-b"></div>
+                <div class="barra1 navegacion pad-b">
+                    <a href="portfolio.html" class="navegacion__enlace">Portfolio</a>
+                    <a href="aboutme.html" class="navegacion__enlace">About Us</a>
+                    <a href="index.html" class="navegacion__enlace">Office</a>
+                </div>
+            </div>
+        </nav>
+        <main class="header1">
+            <div class="contenedor column-musk">
+                <section>
+                    <div>
+                        <blockquote class="pad-t blockquote contenedor"> " One bit of advice: it is important to view knowledge as sort of a semantic tree <br>
+                        — make sure you understand the fundamental principles, ie the trunk and big branches,
+                        before you get into the leaves/details or there is nothing for them to hang on to."</blockquote>
+                        <p class="contenedor pad-b">Elon Musk</p>
+                    </div>
+                </section>
+                <form class="contenedor formulario">
+                    <h4>Contact</h4>
+                    <div>
+                        <legend for="Name">Name :</legend>
+                        <input class="inputs" id="Name" type="text">
+                    </div>
+                    <div class="pad-t">
+                        <legend for="Email">Email :</legend>
+                        <input class="inputs" id="Email" type="email">
+                    </div>
+                    <div class="pad-t">
+                        <legend for="Phone">Phone :</legend>
+                        <input class="inputs"id="Phone" type="tel">
+                    </div>
+                    <div class="pad-t pad-b"> 
+                        <legend for="Message">Message :</legend>
+                        <textarea cols="30" rows="7" id="Message"></textarea>
+                    </div>
+                    <input type="submit" class="boton boton--primario" name="send" id="send" value="Send">
+                </form>
+            </div>
+        </main>
+
+    <footer class="footer2 pad-b">
+        <div class="contenedor">
+            <div class="barra1">
+                <nav class="navegacion">
+                    <a href="portfolio.html" class="navegacion__enlace">Portfolio</a>
+                    <a href="aboutme.html" class="navegacion__enlace">About Us</a>
+                    <a href="index.html" class="navegacion__enlace">Office</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/form.js" type="module"></script>
+</body>
+</html>
