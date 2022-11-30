@@ -116,16 +116,32 @@ blockquote {
 .white {
     color: var(--grisOs);
 }
+
 .black {
     background-color: var(--negro);
 }
+
 .alerta {
     background-color: rgba(255, 0, 0, 0.5);
     color: #e1e1e1;
 }
 
-/* about me */
+.inline {
+    display: inline-block;
+}
+.equilibrium {
+    display: flex;
+    justify-content: center;
+}
 
+@media (min-width: 768px) {
+    .span {
+        display: inline-block; 
+        margin: 2rem 4rem;
+    }    
+}
+
+/* about me */
 
 .inline {
     display: inline-block;
@@ -177,6 +193,7 @@ blockquote {
 
 .navegacion-secundaria {
     padding: 0;
+    padding: 1rem;
     background-color: var(--negro); 
 }
 .header {
@@ -202,10 +219,7 @@ blockquote {
    color: var(--blanco);
    margin-top: 5rem;
 }
-@media (min-width: 480px) {
 
-    
-}
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
@@ -281,8 +295,6 @@ blockquote {
 .boton--secundario {
     background-color: var(--primario);
 }
-
-
 .footer {
     background-color: var(--negro);
     margin-top: 4rem;
@@ -300,8 +312,10 @@ blockquote {
     display: grid;
     grid-template-rows: 32% 50% 18%;
     background-color: var(--primario);   
+    padding-bottom: 3rem;
+    background-color: var(--primario);
 }
-  
+
 .card {
     gap: 2rem;
     display:block;
@@ -323,14 +337,27 @@ blockquote {
     margin-right: 1rem;
 }
 
+@media (min-width: 667px) {
+    .rows {
+        display: grid;
+        grid-template-rows: 18% 33% 49%;
+    }   
+}
+.seccion {
+    margin-right: 1rem;
+}
+.seccion-iconos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+@media (min-width: 667px) {
     .seccion-iconos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
 /* contact */
-
-
 
 @media (min-width: 772px ) { 
     .column-musk {

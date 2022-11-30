@@ -12,7 +12,6 @@ import { contenedor, agregarImagen } from './functions/crearImagen.js';
 agregarImagen('./img/cv.jpg');
 crearNodo("h1", "logo-nombre","centrar-texto", person.firstname + person.lastname, contenedor);
 
-
 //aside
 
 const contactIcon1 = document.createElement('div');
@@ -24,6 +23,9 @@ contactIcon1.classList.add('inline')
 
 const card1 = document.querySelector('#card1');
 crearNodo('h4', 'white', 'centrar-texto', 'Contact', card1);
+// const lista = document.createElement('ul');
+// const listado = card1.appendChild(lista);
+
 
 const iconHome = document.createElement('i');
 iconHome.classList.add('fa-location-dot', 'inline', 'margin', 'fa-solid');
@@ -158,5 +160,6 @@ crearNodo('h3', 'margin-esp', 'centrar-texto', 'Jobs & Projects', seccion3);
 crearNodo('p', null, 'contenedor', 'Builiding web pages, based on Clients necessities, creating a nice interaction for user, and builiding a strong and safe acces to DataBase.', proyectos);
 crearNodo('p', null, 'contenedor', 'Layout Development and Programming, with Responsive Design.', proyectos);
 crearNodo('p', null, 'contenedor', 'Knowledge of AJAX  and VUE.', proyectos);
+
 crearNodo('p', null, 'contenedor', 'Check my Projects here : https://github.com/Michellefsd.', proyectos);
 seccion3.appendChild(proyectos);
