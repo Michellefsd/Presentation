@@ -2,7 +2,7 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --primario: #954517;
+    --primario: #744d35;
     --gris: #e1e1e1;
     --grisOs: #cccccc;
     --blanco: #ffffff;
@@ -99,13 +99,13 @@ blockquote {
     text-align: center;
 }
 .border-radius {
-    border-radius: 30%;
+    border-radius: 8px;
 }
 .border-radius2 {
     border-radius: .5rem;
 }
 .border-radius1 {
-    border-radius: 30%;
+    border-radius: 8px;
     width: 180px;
     margin: 1.6rem 2rem 1.6rem 0;
     height: auto; 
@@ -163,7 +163,7 @@ blockquote {
     }
 }
 .img-yocv {
-    width: 140px;
+    width: 104px;
     height: auto; 
 }
 @media (min-width: 768px) {
@@ -185,7 +185,7 @@ blockquote {
 @media (min-width: 992px) {
         .column2 {
         display: grid;
-        grid-template-columns: 25% 75% ;
+        grid-template-columns: 23% 78% ;
     }
 }
 
@@ -324,25 +324,25 @@ blockquote {
 
 .rows {
     display: grid;
-    grid-template-rows: 18% 50% 32%;
+    grid-template-rows: 50% 27% 18%;
 }
-@media (min-width: 667px) {
+@media (min-width: 480px) {
     .rows {
         display: grid;
-        grid-template-rows: 18% 33% 49%;
-    }
-    
+        grid-template-rows: 43% 34% 23%;
+    }   
+}
+@media (min-width: 768px) {
+    .rows {
+        display: grid;
+        grid-template-rows: 43% 34% 23%;
+    }   
 }
 .seccion {
     margin-right: 1rem;
 }
 
-@media (min-width: 667px) {
-    .rows {
-        display: grid;
-        grid-template-rows: 18% 33% 49%;
-    }   
-}
+
 .seccion {
     margin-right: 1rem;
 }
